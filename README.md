@@ -1,6 +1,6 @@
 ##  ACT
 
-Code for our NAACL-HLT 2022 paper: "Neighbors Are Not Strangers: Improving Non-Autoregressive Translation under Low-Frequency Lexical Constraints".
+Code for our NAACL-HLT 2022 paper: "[Neighbors Are Not Strangers: Improving Non-Autoregressive Translation under Low-Frequency Lexical Constraints](https://arxiv.org/abs/2204.13355)".
 
 ### Requirements
 
@@ -77,6 +77,13 @@ python generate.py data/wmt14-en-de-distill-bin \
 
 If you find our paper useful to your work, please kindly cite our paper:
 ```latex
-TODO
+@misc{zeng2021neighbors,
+      title={Neighbors Are Not Strangers: Improving Non-Autoregressive Translation under Low-Frequency Lexical Constraints},
+      author={Zeng, Chun and Chen, Jiangjie and Zhuang, Tianyi and Xu, Rui and Yang, Hao and Qin, Ying and Tao, Shimin and Xiao, Yanghua},
+      year={2022},
+      eprint={2204.13355},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL}
+}
 ```
 
