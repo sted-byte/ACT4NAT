@@ -1,8 +1,8 @@
-##  ACT
+# ACT for Lexically Constrained NAT
 
 Code for our NAACL-HLT 2022 paper: "[Neighbors Are Not Strangers: Improving Non-Autoregressive Translation under Low-Frequency Lexical Constraints](https://arxiv.org/abs/2204.13355)".
 
-### Requirements
+## Requirements
 
 - transformers>=4.2.0
 - python version>=3.6
@@ -10,15 +10,13 @@ Code for our NAACL-HLT 2022 paper: "[Neighbors Are Not Strangers: Improving Non-
 
 ### Preparation
 
-#### Command
-
 - Enter the fairseq folder, run the command
 
   ```bash
   pip install --editable ./
   ```
 
-#### File
+### Organizing Files
 
 - Language pair dataset: Binarized language files.
 - Test set constraint: each line represents a constraint for the corresponding language pair in the format "4|immer", representing that the fourth word of the source language word needs to be translated to "immer".
@@ -27,7 +25,7 @@ Code for our NAACL-HLT 2022 paper: "[Neighbors Are Not Strangers: Improving Non-
 - Alignment file: First use the GIZA++ tools to get alignment file, then put them into the binarized folder and name it "train.align_giza" and "valid.align_giza".
 - TF-IDF file: Put them into the binarized folder and name it "train.tfidf.score", "train.tfidf.word", "valid.tfidf.score", "valid.tfidf.word", "test.tfidf.score", "test.tfidf.word". We build the tfidf by gensim.
 
-### Train
+## Training
 
 ```bash
 python train.py data/wmt14-en-de-distill-bin \
@@ -56,7 +54,7 @@ python ../fairseq/scripts/average_checkpoints.py \
 --num-epoch-checkpoints  5 --output checkpoint_aver.pt
 ```
 
-### Generate
+## Inference
 
 we can set the decoding mode 0 for no constraint, 1 for soft constraint and 2 for hard constraint
 
