@@ -75,13 +75,23 @@ python generate.py data/wmt14-en-de-distill-bin \
 
 If you find our paper useful to your work, please kindly cite our paper:
 ```latex
-@misc{zeng2021neighbors,
-      title={Neighbors Are Not Strangers: Improving Non-Autoregressive Translation under Low-Frequency Lexical Constraints},
-      author={Zeng, Chun and Chen, Jiangjie and Zhuang, Tianyi and Xu, Rui and Yang, Hao and Qin, Ying and Tao, Shimin and Xiao, Yanghua},
-      year={2022},
-      eprint={2204.13355},
-      archivePrefix={arXiv},
-      primaryClass={cs.CL}
+@inproceedings{zeng-etal-2022-neighbors,
+    title = "Neighbors Are Not Strangers: Improving Non-Autoregressive Translation under Low-Frequency Lexical Constraints",
+    author = "Zeng, Chun  and
+      Chen, Jiangjie  and
+      Zhuang, Tianyi  and
+      Xu, Rui  and
+      Yang, Hao  and
+      Ying, Qin  and
+      Tao, Shimin  and
+      Xiao, Yanghua",
+    booktitle = "Proceedings of the 2022 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies",
+    month = jul,
+    year = "2022",
+    address = "Seattle, United States",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2022.naacl-main.424",
+    pages = "5777--5790",
 }
 ```
 
